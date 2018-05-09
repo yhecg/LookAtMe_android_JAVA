@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/material_color_white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chan.example.lookatme.activity.main.MyPidFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--
+            내정보
+            linearLayout_information1 : 상단에 위치한 이미지, 게시물수, 팔로워, 팔로잉, 프로필 수정을 감싸는 레이아웃
+                imageView_profile : 프로필 이미지뷰.
+                linearLayout_information1_1 : 이미지를 제외한 게시물수, 팔로워, 팔로잉, 프로필수정을 감싸는 레이아웃
+                    linearLayout_information1_1_1 : 게시물수, 팔로워, 팔로잉을 감싸는 레이아웃.
+                        linearLayout_information1_1_1_1 : 게시물수 레이아웃.
+                            textView_board_count : 게시물수를 나타내는 텍스트뷰.
+                            textView_board_text : 게시물 텍스트.
+                        linearLayout_information1_1_1_2 : 팔로워수 레이아웃.
+                            textView_follower_count : 팔로워수를 나타내는 텍스트뷰.
+                            textView_follower_text : 팔로워 텍스트.
+                        linearLayout_information1_1_1_3 : 팔로잉수 레이아웃.
+                            textView_following_count : 팔로잉수를 나타내는 텍스트뷰.
+                            textView_following_text : 팔로잉 텍스트.
+                    button_profile_update_go : 프로필 수정창으로 가는 버튼.
+         -->
+            <LinearLayout
+                android:id="@+id/linearLayout_information1"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageView_profile"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/ic_member_profile2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"/>
+                <LinearLayout
+                    android:id="@+id/linearLayout_information1_1"
+                    android:orientation="vertical"
+                    android:weightSum="5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:id="@+id/linearLayout_information1_1_1"
+                        android:orientation="horizontal"
+                        android:layout_weight="3"
+                        android:weightSum="3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+                        <LinearLayout
+                            android:id="@+id/linearLayout_information1_1_1_1"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:id="@+id/textView_board_count"
+                                android:text="@string/activity_mypid_textView_basic_count"
+                                android:textColor="@color/material_color_black"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/textView_board_text"
+                                android:text="@string/activity_mypid_textView_board_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linearLayout_information1_1_1_2"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:id="@+id/textView_follower_count"
+                                android:text="@string/activity_mypid_textView_basic_count"
+                                android:textColor="@color/material_color_black"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/textView_follower_text"
+                                android:text="@string/activity_mypid_textView_follower_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linearLayout_information1_1_1_3"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:id="@+id/textView_following_count"
+                                android:text="@string/activity_mypid_textView_basic_count"
+                                android:textColor="@color/material_color_black"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <TextView
+                                android:id="@+id/textView_following_text"
+                                android:text="@string/activity_mypid_textView_following_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/button_profile_update_go"
+                        android:background="@drawable/button_border_round"
+                        android:textColor="@color/material_color_white"
+                        android:text="@string/activity_mypid_button_profile_update"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_board"
+                app:layoutManager="GridLayoutManager"
+                app:spanCount="3"
+                android:layout_below="@id/linearLayout_information1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <!-- button_board_insert_go : 게시글 등록하러 가기 버튼. -->
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/button_board_insert_go"
+                android:src="@drawable/ic_add"
+                android:layout_margin="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

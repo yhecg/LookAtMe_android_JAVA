@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/material_color_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chan.example.lookatme.activity.start.LoginActivity">
+
+    <TextView
+        android:text="@string/activity_login_textView_appName"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:textColor="@color/material_color_app_basic"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/activity_login_textView_email"
+            android:textColor="@color/material_color_black"
+            android:paddingLeft="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.chan.example.lookatme.function.ClearEditText
+            android:id="@+id/editText_input_email"
+            android:hint="@string/activity_login_editText_email_hint"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="@string/activity_login_textView_pwd"
+            android:textColor="@color/material_color_black"
+            android:paddingLeft="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <com.chan.example.lookatme.function.ClearEditText
+            android:id="@+id/editText_input_pwd"
+            android:hint="@string/activity_login_textView_pwd_hint"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:weightSum="1"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/button_login_lookAtMe"
+                android:layout_weight="0.5"
+                android:text="@string/activity_login_lookAtMeLoginButton"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_solid"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/button_join"
+                android:layout_weight="0.5"
+                android:text="@string/activity_login_joinButton"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/button_solid"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

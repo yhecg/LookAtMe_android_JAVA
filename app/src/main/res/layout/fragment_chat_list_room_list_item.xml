@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView_member_image"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/icon_app_title"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_1"
+        android:layout_toRightOf="@id/circleImageView_member_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView_chattingRoom_message_time"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RelativeLayout
+            android:id="@+id/relativeLayout_1_1"
+            android:layout_toLeftOf="@id/textView_chattingRoom_message_time"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textView_chattingRoom_name"
+                android:textColor="@color/material_color_black"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_2"
+        android:layout_toRightOf="@id/circleImageView_member_image"
+        android:layout_below="@id/relativeLayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView_chattingRoom_message_unread_count"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/red"
+            android:text="@string/fragment_chat_list_textView_chattingRoom_message_unread_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/textView_chattingRoom_message_contents"
+            android:layout_toLeftOf="@id/textView_chattingRoom_message_unread_count"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/textView_chattingRoom_public_key"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textView_chattingRoom_accept_member_email"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/textView_chattingRoom_accept_member_image"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

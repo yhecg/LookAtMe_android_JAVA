@@ -1,0 +1,69 @@
+<resources>
+
+    <string name="app_name">LookAtMe</string>
+
+    <!-- activity_login.xml -->
+    <string name="activity_login_textView_appName">LookAtMe</string>
+    <string name="activity_login_textView_email">이메일</string>
+    <string name="activity_login_editText_email_hint">이메일 계정 입력</string>
+    <string name="activity_login_textView_pwd">비밀번호</string>
+    <string name="activity_login_textView_pwd_hint">비밀번호 입력</string>
+    <string name="activity_login_lookAtMeLoginButton">로그인</string>
+    <string name="activity_login_joinButton">회원가입</string>
+
+    <!-- activity_join.xml -->
+    <string name="activity_join_textView_email">이메일</string>
+    <string name="activity_join_editText_email_hint">이메일 계정 입력</string>
+    <string name="activity_join_textView_pwd">비밀번호</string>
+    <string name="activity_join_editText_pwd_hint">비밀번호 입력(6~12자리 영문+숫자)</string>
+    <string name="activity_join_textView_name">이름</string>
+    <string name="activity_join_editText_name_hint">이름 입력</string>
+    <string name="activity_join_button_joinComplete">회원가입 완료</string>
+
+    <!-- fragment_my_pid.xml -->
+    <string name="activity_mypid_textView_basic_count">0</string>
+    <string name="activity_mypid_textView_board_count">게시물</string>
+    <string name="activity_mypid_textView_follower_count">팔로워</string>
+    <string name="activity_mypid_textView_following_count">팔로잉</string>
+    <string name="activity_mypid_button_profile_update">프로필 수정</string>
+
+    <!-- activity_board_insert.xml , activity_board_update.xml-->
+    <string name="activity_board_insert_textView_represent_image_text">위의 이미지란을 클릭하여 이미지를 등록하세요.</string>
+    <string name="activity_board_insert_textView_sub_image_1_text">사진 1</string>
+    <string name="activity_board_insert_textView_sub_image_2_text">사진 2</string>
+    <string name="activity_board_insert_textView_sub_image_3_text">사진 3</string>
+    <string name="activity_board_insert_editText_contents_input_hint">내용을 입력하세요.</string>
+    <string name="activity_board_insert_textView_contents_text_count">0/100</string>
+
+    <!-- activity_member_profile_update.xml -->
+    <string name="activity_member_profile_update_textView_name">이름</string>
+    <string name="activity_member_profile_update_editText_name_hint">이름 입력</string>
+
+    <!-- activity_board_detail.xml -->
+    <string name="activity_board_detail__good_comment_basic_count">0</string>
+
+    <!-- activity_board_comment.xml -->
+    <string name="activity_board_comment_editText_comment_insert_hint">댓글 달기</string>
+    <string name="activity_board_comment_textView_comment_comments_insert">답글 달기</string>
+
+    <!-- activity_member_search.xml -->
+    <string name="activity_member_search_editText_member_name_search_hint">회원 이름을 입력하세요.</string>
+
+    <!-- activity_member_pid.xml -->
+    <string name="activity_memberpid_textView_basic_count">0</string>
+    <string name="activity_memberpid_textView_board_count">게시물</string>
+    <string name="activity_memberpid_textView_follower_count">팔로워</string>
+    <string name="activity_memberpid_textView_following_count">팔로잉</string>
+    <string name="activity_memberpid_button_follow_before">팔로우하기</string>
+    <string name="activity_memberpid_button_follow_after">팔로우 취소</string>
+    <string name="activity_memberpid_button_follow_lookatme">LookAtMe</string>
+
+    <!-- activity_chatting_invite.xml -->
+    <string name="activity_chatting_invite_editText_member_name_search_hint">회원 이름을 입력하세요.</string>
+
+    <!-- fragment_chat_list.xml -->
+    <string name="fragment_chat_list_textView_chattingRoom_message_unread_count">0</string>
+
+    <!-- activity_chatting_invite.xml -->
+    <string name="activity_chatting_room_member_add_invite_editText_member_name_search_hint">회원 이름을 입력하세요.</string>
+</resources>

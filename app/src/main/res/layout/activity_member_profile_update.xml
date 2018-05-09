@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linearLayout_represent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/material_color_purple_50"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chan.example.lookatme.activity.member.MemberProfileUpdateActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:background="@color/material_color_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_margin="5dp"
+        app:cardCornerRadius="5dp"
+        android:background="@color/material_color_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView_member_profile_image"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_member_profile2"
+                android:layout_margin="20dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"/>
+            <TextView
+                android:text="@string/activity_member_profile_update_textView_name"
+                android:textColor="@color/material_color_black"
+                android:paddingLeft="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <com.chan.example.lookatme.function.ClearEditText
+                android:id="@+id/editText_member_name"
+                android:hint="@string/activity_member_profile_update_editText_name_hint"
+                android:inputType="text"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    </ScrollView>
+
+</LinearLayout>

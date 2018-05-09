@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_color_white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@color/material_color_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chan.example.lookatme.activity.board_pid.BoardDetailActivity">
+
+    <!-- toolBar : 맨 위에 위치한 툴바. -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:theme="@style/AppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:background="@color/material_color_white"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView_writer_member_image"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+        <TextView
+            android:id="@+id/textView_writer_member_name"
+            android:layout_toRightOf="@id/imageView_writer_member_image"
+            android:layout_centerVertical="true"
+            android:textColor="@color/material_color_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/textView_board_date"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_image_slide"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"/>
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imageView_good_image"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/icon_heart"
+            android:scaleType="fitXY"
+            android:layout_marginRight="5dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+        <TextView
+            android:id="@+id/textView_good_count"
+            android:layout_toRightOf="@id/imageView_good_image"
+            android:text="@string/activity_board_detail__good_comment_basic_count"
+            android:textSize="20dp"
+            android:textColor="@color/material_color_black"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/imageView_comment_image"
+            android:layout_toRightOf="@id/textView_good_count"
+            android:src="@drawable/icon_comment"
+            android:scaleType="fitXY"
+            android:layout_marginRight="5dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+        <TextView
+            android:id="@+id/textView_comment_count"
+            android:layout_toRightOf="@id/imageView_comment_image"
+            android:text="@string/activity_board_detail__good_comment_basic_count"
+            android:textSize="20dp"
+            android:textColor="@color/material_color_black"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView_board_contents"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/material_color_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="colorAccent">@color/material_color_app_basic</color>
+
+    <!-- color code -->
+    <color name="red">#FF0000</color>
+
+    <!-- material color -->
+    <color name="material_color_app_basic">#BA68C8</color> <!-- Purple 300 -->
+    <color name="material_color_purple_100">#E1BEE7</color> <!-- Purple 100 -->
+    <color name="material_color_purple_50">#F3E5F5</color> <!-- Purple 50 -->
+    <color name="material_color_black">#000000</color>
+    <color name="material_color_white">#FFFFFF</color>
+    <color name="material_color_gray_50">#FAFAFA</color>
+    <color name="material_color_gray_200">#EEEEEE</color>
+
+
+
+
+</resources>
