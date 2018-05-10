@@ -74,9 +74,6 @@ public class LoginActivity extends AppCompatActivity {
         spf_login_member = getSharedPreferences("loginMember", MODE_PRIVATE);
         spf_editor_login_member = spf_login_member.edit();
 
-//        editText_input_email.setText("ljs@naver.com");
-//        editText_input_pwd.setText("123qwe");
-
     }
 
     /**
