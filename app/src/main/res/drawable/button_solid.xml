@@ -7,20 +7,20 @@
             <item android:top="3dp">
                 <shape>
                     <corners android:radius="3dp" />
-                    <solid android:color="@color/material_color_gray_200" />
+                    <solid android:color="@color/material_color_gray_50" />
                 </shape>
             </item>
             <!-- background (위로) -->
             <item android:bottom="2dp">
                 <shape>
                     <corners android:radius="3dp" />
-                    <solid android:color="@color/material_color_gray_50" />
+                    <solid android:color="@color/material_color_white" />
                 </shape>
             </item>
             <!-- 테두리 -->
             <item>
                 <shape>
-                    <stroke android:width="1dp" android:color="@color/material_color_gray_200"></stroke>
+                    <stroke android:width="1dp" android:color="@color/material_color_black"></stroke>
                 </shape>
             </item>
         </layer-list>
