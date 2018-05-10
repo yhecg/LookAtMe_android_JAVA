@@ -76,6 +76,7 @@ public class LoginActivity extends AppCompatActivity {
 
 //        editText_input_email.setText("ljs@naver.com");
 //        editText_input_pwd.setText("123qwe");
+
     }
 
     /**
