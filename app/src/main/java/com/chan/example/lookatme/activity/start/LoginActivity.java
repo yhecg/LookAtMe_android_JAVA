@@ -74,6 +74,7 @@ public class LoginActivity extends AppCompatActivity {
         spf_login_member = getSharedPreferences("loginMember", MODE_PRIVATE);
         spf_editor_login_member = spf_login_member.edit();
 
+
     }
 
     /**
