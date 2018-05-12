@@ -106,7 +106,7 @@ public class ChattingMessageListAdapter extends RecyclerView.Adapter<ChattingMes
                     if(time_compare_1.equals(time_compare_2)){
                         holder.textView_message_you_time.setText(vo.getChattingMessage_time().substring(11,16));
                     }else{
-                        holder.textView_message_you_time.setText(vo.getChattingMessage_time());
+                        holder.textView_message_you_time.setText(vo.getChattingMessage_time().substring(0,10));
                     }
                 }else if(vo.getChattingMessage_type().equals("image")){
                     holder.layout__messageType_message.setVisibility(View.GONE);
@@ -117,7 +117,7 @@ public class ChattingMessageListAdapter extends RecyclerView.Adapter<ChattingMes
                     if(time_compare_1.equals(time_compare_2)){
                         holder.textView_image_you_time.setText(vo.getChattingMessage_time().substring(11,16));
                     }else{
-                        holder.textView_image_you_time.setText(vo.getChattingMessage_time());
+                        holder.textView_image_you_time.setText(vo.getChattingMessage_time().substring(0,10));
                     }
                 }
 
@@ -134,7 +134,7 @@ public class ChattingMessageListAdapter extends RecyclerView.Adapter<ChattingMes
                     if(time_compare_1.equals(time_compare_2)){
                         holder.textView_message_me_time.setText(vo.getChattingMessage_time().substring(11,16));
                     }else{
-                        holder.textView_message_me_time.setText(vo.getChattingMessage_time());
+                        holder.textView_message_me_time.setText(vo.getChattingMessage_time().substring(0,10));
                     }
                 }else if(vo.getChattingMessage_type().equals("image")){
                     holder.layout__me_message_type_message.setVisibility(View.GONE);
@@ -145,7 +145,7 @@ public class ChattingMessageListAdapter extends RecyclerView.Adapter<ChattingMes
                     if(time_compare_1.equals(time_compare_2)){
                         holder.textView_image_me_time.setText(vo.getChattingMessage_time().substring(11,16));
                     }else{
-                        holder.textView_image_me_time.setText(vo.getChattingMessage_time());
+                        holder.textView_image_me_time.setText(vo.getChattingMessage_time().substring(0,10));
                     }
                 }
 
